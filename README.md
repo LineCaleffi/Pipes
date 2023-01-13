@@ -5,3 +5,5 @@ Usando pipes, parâmetros e pipes aninhados
 - Uppercase
 - Lowercase
 - Pipe "puro"
+- Pipe "impuro"
+- Maneira correta de usar o pipe
