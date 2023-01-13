@@ -1,6 +1,6 @@
 <h3> Exemplo de Pipes </h3>
 
-<p>Título: {{ livro.title | uppercase }}</p> <!-- transforma as letras em maiuscula . lowercase deixa em minuscula-->
+<p>Título: {{ livro.title | uppercase | camelCase}}</p> <!-- transforma as letras em maiuscula . lowercase deixa em minuscula-->
 <p>Estrelas: {{ livro.star | number:'1.1-1' }}</p><!-- Organiza melhor os números '1' - 1 casa decimal a esquerda, 
                                                        '.1-1'- e o numero minimo e máximo de 1 casa decimal a direita-->
 <p>Páginas: {{ livro.page | number }}</p>
