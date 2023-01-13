@@ -18,5 +18,8 @@ export class ExemplosPipesComponent implements OnInit{
   constructor(){}
   ngOnInit() {}
   
+  livros: string[] = ['Angular 2', 'Java'];
+
+  filtro: string = '';
 
 }
