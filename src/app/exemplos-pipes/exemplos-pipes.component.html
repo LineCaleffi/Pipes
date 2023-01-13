@@ -3,9 +3,13 @@
 <p>Título: {{ livro.title | uppercase | camelCase}}</p> <!-- transforma as letras em maiuscula . lowercase deixa em minuscula-->
 <p>Estrelas: {{ livro.star | number:'1.1-1' }}</p><!-- Organiza melhor os números '1' - 1 casa decimal a esquerda, 
                                                        '.1-1'- e o numero minimo e máximo de 1 casa decimal a direita-->
-<p>Páginas: {{ livro.page | number }}</p>
+<p>Páginas: {{ livro.page }}</p>
 <p>Preço: {{ livro.price | currency:'BRL' }}</p> <!-- currency:'BRL' - formata o preço em moeda REAL. Só currency deixa em dólar -->
-<p>Data de Lançamento: {{ livro.dateLancamento | date:'dd/MMM/yyyy' }}</p><!-- Formata a data para padrão brasileiro -->
+<!--
+    <p>Data de Lançamento: {{ livro.dateLancamento | date:'dd/MMM/yyyy'}}</p>
+    -- Formata a data para padrão brasileiro 
+-->
+<p>Data de Lançamento: {{ livro.dateLancamento | date }}</p> 
 <p>URL: {{ livro.url }}</p>
 <br>
 <p>Livro: {{ livro | json }}</p>
