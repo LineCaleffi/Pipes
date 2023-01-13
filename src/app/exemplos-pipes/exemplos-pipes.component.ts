@@ -25,6 +25,7 @@ export class ExemplosPipesComponent implements OnInit{
     console.log(this.livros);
   }
 
+  // Maneira correta de usar filtro nos projetos reais
   obterCursos() {
 
     if (this.livros.length === 0 || this.filtro === undefined
